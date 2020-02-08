@@ -10,4 +10,6 @@ As seen by the scoring histogram, it is apparent that scores tend to follow a ro
 
 To create the dataframe, the wrestlestat dataset had to be joined with the dataset I created. This was rather seamless other than the problem of joining on different name spellings of wrestlers. For example, my dataset used the name 'Cam Sykora' while the wrestlestat dataset used 'Cameron Sykora'. The fuzzywuzzy package came in handy here to ultimately join on names that were related by a fuzz ratio of 70/100 (with one weight class as an exception using a bit lower ratio).
 
+To get a sense of the models accuracy, sample predictions can be found in the csv file named ExamplePredictions.csv.
+
 I am excited to see how the model performs on the 2020 NCAA Championships competition, and will update here with my results following March 21, 2020.
