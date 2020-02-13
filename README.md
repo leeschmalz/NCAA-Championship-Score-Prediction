@@ -13,3 +13,5 @@ To create the dataframe, the wrestlestat dataset had to be joined with the datas
 To get a sense of the models accuracy, sample predictions can be found in the csv file named ExamplePredictions.csv.
 
 I am excited to see how the model performs on the 2020 NCAA Championships competition, and will update here with my results following March 21, 2020.
+
+Update: I decided to build a neural network regression model to predict instead, also added to the repository. It outperforms the scikit-learn regression model by a significant amount. I used tensorboard to optimize the neuron layers (amount of neurons and amount of layers). I ended up choosing a fully dense network of 36 and 24 neuron layers, followed by a ingle neuron output layer to spit out the predicted score. These numbers were somewhat arbitrary, but they are optimized in the correct general range. I also used tensorboard's overfitting optimization to set the epoch number that fit the model properly without overfitting (and a validation set of 20%). I think this is probably overkill for this use case, but it was fun and I want to win the fantasygrade competition. 
